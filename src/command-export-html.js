@@ -186,7 +186,7 @@ export default function(context) {
         let dup = symbolInstance.copy();
         symbolInstance.parentGroup().insertLayer_afterLayer(dup, symbolInstance);
         if (dup.detachStylesAndReplaceWithGroupRecursively) {
-          dup = dup.detachStylesAndReplaceWithGroupRecursively(true);
+          dup = dup.detachStylesAndReplaceWithGroupRecursively(false);
         } else {
           dup = dup.detachByReplacingWithGroup();
         }
